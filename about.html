@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #grid1 {
+            display: grid;
+            margin-bottom: 50px;
+        }
+
+        #para {
+            display: grid;
+            grid-template-rows: 200px;
+        }
+
+        #grid2 {
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 250px;
+
+        }
+
+        #button {
+            display: grid;
+            margin: 10px;
+        }
+
+        #grid3 {
+            display: grid;
+
+        }
+
+        .box {
+            padding: 25px;
+            border:1px solid black;
+            background-color: gray;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <div class="box">Title 1</div>
+        <div class="box">Title 2</div>
+        <div class="box" id="para">Paragraph</div>
+    </div>
+
+    <div id="grid2">
+        <div class="box">Title</div>
+        <div class="box">Title</div>
+        <div class="box">Title</div>
+        <div class="box">Title</div>
+        <div class="box">Paragraph</div>
+        <div class="box">Paragraph</div>
+        <div class="box">Paragraph</div>
+        <div class="box">Paragraph</div>
+        
+    </div>
+
+    <div id="button">
+        <div class="box">Button</div>
+    </div>
+
+    <div id="grid3">
+        <div class="box" >Title</div>
+        <div class="box">Paragraph</div>
+        <div class="box" id="image">Image</div>
+    </div>
+
+    <div id="grid4">
+        <div class="box">Title</div>
+        <div class="box">Paragraph</div>
+        <div class="box">Points</div>
+    </div>
+
+    <div id="grid5">
+        <div class="box">Title</div>
+        <div class="box">Paragraph</div>
+        <div class="box">Points</div>
+    </div>
+</body>
+</html>

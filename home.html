@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model in CSS</title>
+    <style>
+        #grid1 {
+            display:grid;
+            margin-bottom:50px;
+            grid-template-columns:repeat(2, 1fr);
+            grid-auto-rows: 250px;
+        }
+
+        #image {
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+
+        .box {
+            background-color:gray;
+            border:1px solid black;
+            padding:10px;
+        }
+
+        #grid2 {
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 250px;
+        }
+
+        #join {
+            grid-column: 1/5;
+        }
+
+        #grid3 {
+            display:grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .small-box {
+            background-color:black;
+            color:white;
+            padding:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <div class="box" id="title">Title</div>
+        <div class="box" id="paragraph">Paragraph</div>
+        <div class="box" id="image">Image</div>
+    </div>
+
+    <div id="grid2">
+        <div class="box" id="join">Join Us</div>
+        <div class="box" id="grid3">
+            <div class="small-box">Logo</div>
+            <div class="small-box">Name</div>
+            <div class="small-box">Stat</div>
+            <div class="small-box">Button</div>
+        </div>
+        <div class="box">Discord</div>
+        <div class="box">Hashnode</div>
+        <div class="box">Twitter
+        </div>
+    </div>
+</body>
+</html>
