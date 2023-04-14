@@ -1,0 +1,18 @@
+.blue-bg {
+    background-color: #101727;
+    color: white;
+}
+
+.text-img-desc {
+    font-size: 0.9rem;
+    color: #636363;
+}
+
+.text-header-small {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.text-neon {
+    color: #48d6b5;
+    font-family: 'Teko', sans-serif;
+}
